@@ -44,7 +44,7 @@ Each script follows this general structure:
 4. **Evaluation**: Outputs accuracy, F1 score, and confusion matrix.
 5. **Inference**: Predicts scores on unseen research outputs.
 
-## Easiest way to tun a script is to use Google Colab https://colab.google/ and create a new notebook
+## Easiest way to run a script is to use Google Colab https://colab.google/ , create a new notebook and upload all datasets needed as given.
 
 ## Vs code or any other IDE
 To run a script:
