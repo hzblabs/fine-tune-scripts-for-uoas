@@ -46,7 +46,7 @@ Each script follows this general structure:
 
 ## Easiest way to run a script is to use Google Colab https://colab.google/ , create a new notebook and upload all datasets needed as given.
 
-## Vs code or any other IDE
+## If using Vs code or any other IDE, use the below
 To run a script:
 
 ```bash
