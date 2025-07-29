@@ -17,14 +17,6 @@ This repository contains Python scripts converted from Jupyter Notebooks used fo
 * Virtualenv or Conda recommended
 * GPU strongly recommended (BigBird model is resource-intensive)
 
-### Dependencies
-
-Install all required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
 Typical packages used:
 
 * `transformers`
@@ -46,7 +38,25 @@ Each script follows this general structure:
 
 ## Easiest way to run a script is to use Google Colab https://colab.google/ , create a new notebook and upload all datasets needed as given. (Ensure you are connected to a runtime and each filename uploaded matches the name in the code)
 
+## "filename must match code" look at the example below from uoa4-chunk-tuned.py" as it the best model for all depending on the uploaded dataset (i.e uoa4_full_trainingset.jsonl, uoa11_full_trainset.jsonl, uoa ...)
+
+train_file = "uoa4_full_trainset_chunked.jsonl" ## <-------- This line of code is in the script, it takes the name of the dataset file, ensure it is correct so it runs.
+
+## These lines of code below are in the prediction test script after model training above (fine tune script)
+zip_path = "uoa4_testset.zip" ## <------ This takes the zip file of the test set (pdf files you need to test)
+extract_dir = "./uoa4_testset/uoa4_testset" ## <------ This is where the files get extracted to, ensure the name matches the zip file name
+model_path = "./uoa4_model/checkpoint-1317" ## <------ This is your model, ensure the path is correct i.e, checkpoint number changes everytime, ensure number is correct
+ground_truth_csv = "uoa4_groundtruth.xlsx" ## <------ Here is the actual Scores for the pdf files, we upload this to compare the model's score with the groundtruth
+output_csv = "predictions_topk.csv" ## <------ The model outputs this file to you to see what it predicted.
+
 ## If using Vs code or any other IDE, use the below
+### Dependencies
+
+Install all required packages:
+
+```bash
+pip install -r requirements.txt
+```
 To run a script:
 
 ```bash
