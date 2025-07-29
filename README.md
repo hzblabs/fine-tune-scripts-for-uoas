@@ -1,6 +1,6 @@
 # REF Output Classification Scripts
 
-This repository contains Python scripts converted from Jupyter Notebooks used for fine-tuning and running transformer-based models (e.g. BigBird) to classify UK REF (Research Excellence Framework) outputs by star rating (1\*–4\*). Each script corresponds to a specific Unit of Assessment (UoA).
+This repository contains Python scripts converted from Jupyter Notebooks used for fine-tuning and running transformer-based models (e.g. BigBird) to classify UK REF (Research Excellence Framework) outputs by star rating (1\* to 4\*). Each script corresponds to a specific Unit of Assessment (UoA).
 
 ## Contents
 
