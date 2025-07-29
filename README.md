@@ -43,11 +43,11 @@ Each script follows this general structure:
 train_file = "uoa4_full_trainset_chunked.jsonl"  <-------- This line of code is in the script, it takes the name of the dataset file, ensure it is correct so it runs.
 
 ## These lines of code below are in the prediction test script after model training above (fine tune script)
-* zip_path = "uoa4_testset.zip"  ## <------------------ This takes the zip file of the test set (pdf files you need to test)
-* extract_dir = "./uoa4_testset/uoa4_testset"  ## <---------------- This is where the files get extracted to, ensure the name matches the zip file name
-* model_path = "./uoa4_model/checkpoint-1317"  ## <------------------ This is your model, ensure the path is correct i.e, checkpoint number changes everytime, ensure number is correct
-* ground_truth_csv = "uoa4_groundtruth.xlsx"  ## <-------------------- Here is the actual Scores for the pdf files, we upload this to compare the model's score with the groundtruth
-* output_csv = "predictions_topk.csv"  ## <--------------- The model outputs this file to you to see what it predicted.
+* zip_path = "uoa4_testset.zip"   <------------------ This takes the zip file of the test set (pdf files you need to test)
+* extract_dir = "./uoa4_testset/uoa4_testset"   <---------------- This is where the files get extracted to, ensure the name matches the zip file name
+* model_path = "./uoa4_model/checkpoint-1317"   <---------------- This is your model, ensure the path is correct i.e, checkpoint number changes everytime, ensure number is correct
+* ground_truth_csv = "uoa4_groundtruth.xlsx"   <---------------- Here is the actual Scores for the pdf files, we upload this to compare the model's score with the groundtruth
+* output_csv = "predictions_topk.csv"   <--------------- The model outputs this file to you to see what it predicted.
 
 ## If using Vs code or any other IDE, use the below
 ### Dependencies
