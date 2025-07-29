@@ -44,7 +44,7 @@ Each script follows this general structure:
 4. **Evaluation**: Outputs accuracy, F1 score, and confusion matrix.
 5. **Inference**: Predicts scores on unseen research outputs.
 
-## Easiest way to run a script is to use Google Colab https://colab.google/ , create a new notebook and upload all datasets needed as given.
+## Easiest way to run a script is to use Google Colab https://colab.google/ , create a new notebook and upload all datasets needed as given. (Ensure you are connected to a runtime and each filename uploaded matches the name in the code)
 
 ## If using Vs code or any other IDE, use the below
 To run a script:
